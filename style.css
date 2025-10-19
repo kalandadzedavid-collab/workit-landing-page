@@ -49,6 +49,11 @@ header {
     border-bottom: 3px solid #44ffa1;
     padding-bottom: 3px;
   }
+
+  h2:hover {
+    cursor: pointer;
+    color: #44ffa1;
+  }
 }
 
 .top {
@@ -86,6 +91,14 @@ header {
     border: 0;
     margin-bottom: 50px;
   }
+
+  button:hover {
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #44ffa1;
+    color: #44ffa1;
+    padding: 11px 29.5px 14px 30.5px;
+  }
 }
 
 .midback {
@@ -115,7 +128,7 @@ header {
       max-width: 56px;
       align-self: center;
     }
-    h3 {
+    div > h3 {
       margin-top: 56px;
       margin-bottom: 28px;
       font-weight: 600;
@@ -124,7 +137,7 @@ header {
       font-family: "Fraunces", serif;
     }
 
-    p {
+    div > p {
       font-weight: 400;
       font-size: 18px;
       line-height: 32px;
@@ -186,6 +199,14 @@ header {
       border: 0;
     }
 
+    button:hover {
+      cursor: pointer;
+      color: #44ffa1;
+      background-color: transparent;
+      border: 2px solid #44ffa1;
+      padding: 11px 22.5px 14px 23.5px;
+    }
+
     img {
       z-index: 1;
       right: 72.69px;
@@ -207,4 +228,114 @@ header {
   width: 116px;
   display: flex;
   justify-content: space-between;
+
+  img {
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 768px) {
+  .background_top {
+    min-height: 540.24px;
+    overflow: hidden;
+  }
+
+  header {
+    padding: 32px 40px 56px 40px;
+  }
+  .top {
+    h1 {
+      font-weight: 600;
+      font-size: 60px;
+      margin-bottom: 39px;
+    }
+
+    button {
+      padding: 11px 24px 14px 23px;
+      font-size: 16px;
+    }
+    img {
+      width: 514px;
+      height: 296px;
+    }
+  }
+  .bck_top_add {
+    left: -90px;
+  }
+
+  .bck_top_add_2 {
+    right: -50px !important;
+  }
+
+  .middle {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 97.5px;
+
+    .midpara {
+      max-width: 573px;
+      max-height: 136px;
+      flex-direction: row;
+      text-align: start;
+      margin-bottom: 48px;
+
+      img {
+        width: 48px;
+        height: 46px;
+        margin-right: 32px;
+        top: 10px;
+        position: relative;
+      }
+
+      h3 {
+        margin-top: 0 !important;
+        margin-bottom: 16px !important;
+        font-size: 28px !important;
+      }
+
+      p {
+        font-size: 16px !important;
+      }
+    }
+  }
+
+  .midback {
+    top: 490px;
+    height: 1105px;
+  }
+
+  .bottom {
+    padding: 0 40px;
+    margin-bottom: 20px;
+
+    img {
+      width: 281px;
+      height: 281px;
+    }
+    .bck {
+      padding: 48px 56px 48px 56px;
+      width: 514px;
+      height: 375px;
+      right: 40px;
+
+      h2 {
+        font-size: 48px;
+      }
+      p {
+        font-size: 16px;
+        margin: 24px 0;
+      }
+      button {
+        padding: 11px 23.5px 12px 23.5px;
+        font-size: 16px;
+        max-height: 55px;
+      }
+
+      img {
+        width: 173px;
+        height: 137px !important;
+        right: 5px;
+      }
+    }
+  }
 }
